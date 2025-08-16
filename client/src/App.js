@@ -224,7 +224,7 @@ function App() {
     }
     setLoading(true);
     try {
-      const resp = await fetch("http://localhost:4000/playlist-stats", {
+      const resp = await fetch("ttps://playlist-stats-app.onrender.com/playlist-stats", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ playlistIds: ids, merge })
